@@ -19,7 +19,7 @@ class IntroPage2 extends StatelessWidget {
               child: Image.asset('images/delivery.jpeg'),
               height: 300,
             ),
-             Container(
+            Container(
               padding: EdgeInsets.only(top: 30),
               child: Text(
                 'Fast Delivery',
@@ -37,7 +37,7 @@ class IntroPage2 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.grey,
+                  color: Colors.grey[50],
                 ),
               ),
             ),
@@ -68,4 +68,3 @@ class IntroPage2 extends StatelessWidget {
     );
   }
 }
-
