@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import 'onboarding_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:onboarding1/onboarding_screen.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(ScreenUtilInit(
+      designSize: const Size(414, 896),
+      minTextAdapt: true,
+      builder: (context, child) => const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      // title: 'flutter_ScreenUtil',
       home: OnboardingScreen(),
     );
   }
